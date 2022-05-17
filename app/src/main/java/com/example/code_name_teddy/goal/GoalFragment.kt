@@ -1,5 +1,7 @@
 package com.example.code_name_teddy.goal
 
+import android.content.Context
+import android.content.res.Resources
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.code_name_teddy.*
 import com.example.code_name_teddy.databinding.FragmentGoalBinding
+import java.util.*
 
 class GoalFragment: Fragment() {
 
@@ -25,23 +28,47 @@ class GoalFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         initAdapter()
+        onClick()
     }
 
     private fun initAdapter() {
-        goalAdapter = GoalAdapter()
-        binding.goalRecyclerView.adapter = goalAdapter
+        activity?.let {
+            val windowWidth = (activity as MainActivity).binding.fragmentContainer.width - dpToPx(requireContext(), 56)
+            val windowHeight = (activity as MainActivity).binding.fragmentContainer.height
+
+            goalAdapter = GoalAdapter(windowWidth, windowHeight)
+            binding.goalRecyclerView.adapter = goalAdapter
+            getRandomPosition()
+        }
+    }
+
+    fun dpToPx(context: Context, dp: Int): Int {
+        val density = context.resources.displayMetrics.density
+        return (dp * density).toInt()
     }
 
     private fun getRandomPosition() {
 
         var cardList = mutableListOf<Int>()
 
-        var red_count = 0
-        var blue_count = 0
+        var red_count = COUNT_RED
+        var blue_count = COUNT_BLUE
 
         when((0..1).random()) {
-            0 -> { red_count = COUNT_RED + COUNT_SPY }
-            1 -> { blue_count = COUNT_BLUE + COUNT_SPY }
+            0 -> {
+                red_count += COUNT_SPY
+                binding.firstCardTextView.text = red_count.toString()
+                binding.secondCardTextView.text = blue_count.toString()
+                binding.firstCardTextView.setBackgroundResource(R.drawable.background_red_card)
+                binding.secondCardTextView.setBackgroundResource(R.drawable.background_blue_card)
+            }
+            1 -> {
+                blue_count += COUNT_SPY
+                binding.firstCardTextView.text = blue_count.toString()
+                binding.secondCardTextView.text = red_count.toString()
+                binding.firstCardTextView.setBackgroundResource(R.drawable.background_blue_card)
+                binding.secondCardTextView.setBackgroundResource(R.drawable.background_red_card)
+            }
         }
 
         for (i in 1..red_count) { cardList.add(COLOR_RED) }
@@ -49,6 +76,14 @@ class GoalFragment: Fragment() {
         for (i in 1..COUNT_BLACK) { cardList.add(COLOR_BLACK) }
         for (i in 1..COUNT_WHITE) { cardList.add(COLOR_WHITE) }
 
+        cardList.shuffle()
 
+        goalAdapter.initList(cardList)
+    }
+
+    private fun onClick() {
+        binding.refreshButton.setOnClickListener {
+            getRandomPosition()
+        }
     }
 }

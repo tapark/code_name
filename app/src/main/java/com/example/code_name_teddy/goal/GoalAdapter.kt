@@ -6,21 +6,25 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.code_name_teddy.COLOR_BLACK
-import com.example.code_name_teddy.COLOR_BLUE
-import com.example.code_name_teddy.COLOR_RED
-import com.example.code_name_teddy.COLOR_WHITE
+import com.example.code_name_teddy.*
 import com.example.code_name_teddy.databinding.ItemGoalBinding
 
-class GoalAdapter: ListAdapter<Int, GoalAdapter.GoalViewHolder>(diffUtil) {
+class GoalAdapter(val width: Int, val height: Int): RecyclerView.Adapter<GoalAdapter.GoalViewHolder>() {
+
+    lateinit var colorList: MutableList<Int>
 
     inner class GoalViewHolder(val binding: ItemGoalBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(color: Int) {
+            val params = binding.parentLayout.layoutParams
+            params.width = width / 5
+            params.height = height / 5
+            binding.parentLayout.layoutParams = params
+
             when (color) {
-                COLOR_RED -> { binding.cardLayout.setBackgroundColor(Color.RED) }
-                COLOR_BLUE -> { binding.cardLayout.setBackgroundColor(Color.BLUE) }
-                COLOR_WHITE -> { binding.cardLayout.setBackgroundColor(Color.WHITE) }
-                COLOR_BLACK -> { binding.cardLayout.setBackgroundColor(Color.BLACK) }
+                COLOR_RED -> { binding.cardLayout.setBackgroundResource(R.drawable.background_red_card) }
+                COLOR_BLUE -> { binding.cardLayout.setBackgroundResource(R.drawable.background_blue_card) }
+                COLOR_WHITE -> { binding.cardLayout.setBackgroundResource(R.drawable.background_white_card) }
+                COLOR_BLACK -> { binding.cardLayout.setBackgroundResource(R.drawable.background_black_card) }
             }
         }
     }
@@ -32,19 +36,15 @@ class GoalAdapter: ListAdapter<Int, GoalAdapter.GoalViewHolder>(diffUtil) {
     }
 
     override fun onBindViewHolder(holder: GoalViewHolder, position: Int) {
-        holder.bind(currentList[position])
+        holder.bind(colorList[position])
     }
 
-    companion object {
-        val diffUtil = object: DiffUtil.ItemCallback<Int>() {
-            override fun areItemsTheSame(oldItem: Int, newItem: Int): Boolean {
-                return oldItem == newItem
-            }
+    override fun getItemCount(): Int {
+        return colorList.size
+    }
 
-            override fun areContentsTheSame(oldItem: Int, newItem: Int): Boolean {
-                return oldItem == newItem
-            }
-
-        }
+    fun initList(list: MutableList<Int>) {
+        colorList = list
+        notifyDataSetChanged()
     }
 }

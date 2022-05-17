@@ -71,7 +71,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@drawable/background_corner_button"
-                android:text="단어\n추가"
+                android:text="단어"
                 android:textSize="24sp"
                 android:textColor="@color/white"
                 app:layout_constraintHeight_percent="0.8"

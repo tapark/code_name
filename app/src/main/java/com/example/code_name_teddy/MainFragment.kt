@@ -20,6 +20,14 @@ class MainFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        onClick()
+    }
+
+    private fun onClick() {
+        binding.goalButton.setOnClickListener {
+            (activity as MainActivity).showGoalFragment()
+        }
     }
 
 }
