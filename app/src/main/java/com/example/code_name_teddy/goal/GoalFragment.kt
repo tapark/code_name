@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.code_name_teddy.*
 import com.example.code_name_teddy.databinding.FragmentGoalBinding
+import com.example.code_name_teddy.utils.dpToPx
 import java.util.*
 
 class GoalFragment: Fragment() {
@@ -40,11 +41,6 @@ class GoalFragment: Fragment() {
             binding.goalRecyclerView.adapter = goalAdapter
             getRandomPosition()
         }
-    }
-
-    fun dpToPx(context: Context, dp: Int): Int {
-        val density = context.resources.displayMetrics.density
-        return (dp * density).toInt()
     }
 
     private fun getRandomPosition() {

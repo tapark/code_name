@@ -1,5 +1,6 @@
 package com.example.code_name_teddy
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,12 +22,17 @@ class MainFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        (activity as MainActivity).requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+
         onClick()
     }
 
     private fun onClick() {
         binding.goalButton.setOnClickListener {
             (activity as MainActivity).showGoalFragment()
+        }
+        binding.wordButton.setOnClickListener {
+            (activity as MainActivity).showWordFragment()
         }
     }
 
