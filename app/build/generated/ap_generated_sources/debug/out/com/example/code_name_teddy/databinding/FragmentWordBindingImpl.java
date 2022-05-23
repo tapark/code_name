@@ -14,13 +14,15 @@ public class FragmentWordBindingImpl extends FragmentWordBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.titleBar, 1);
+        sViewsWithIds.put(R.id.titleLayout, 1);
         sViewsWithIds.put(R.id.titleTextView, 2);
         sViewsWithIds.put(R.id.grayLine1, 3);
         sViewsWithIds.put(R.id.wordSetViewPager, 4);
         sViewsWithIds.put(R.id.grayLine2, 5);
         sViewsWithIds.put(R.id.textLayout, 6);
-        sViewsWithIds.put(R.id.grayLine3, 7);
+        sViewsWithIds.put(R.id.addWordEditText, 7);
+        sViewsWithIds.put(R.id.addWordButton, 8);
+        sViewsWithIds.put(R.id.grayLine3, 9);
     }
     // views
     @NonNull
@@ -31,13 +33,15 @@ public class FragmentWordBindingImpl extends FragmentWordBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentWordBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
     }
     private FragmentWordBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.TextView) bindings[8]
+            , (android.widget.EditText) bindings[7]
             , (android.view.View) bindings[3]
             , (android.view.View) bindings[5]
-            , (android.view.View) bindings[7]
+            , (android.view.View) bindings[9]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[6]
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
             , (android.widget.TextView) bindings[2]

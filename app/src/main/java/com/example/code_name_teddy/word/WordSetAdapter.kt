@@ -4,6 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.code_name_teddy.databinding.ItemWordSetBinding
+import com.google.android.flexbox.FlexDirection
+import com.google.android.flexbox.FlexWrap
+import com.google.android.flexbox.FlexboxLayoutManager
+import com.google.android.flexbox.JustifyContent
 
 class WordSetAdapter(): RecyclerView.Adapter<WordSetAdapter.WordSetViewHolder>() {
 
@@ -12,7 +16,18 @@ class WordSetAdapter(): RecyclerView.Adapter<WordSetAdapter.WordSetViewHolder>()
     inner class WordSetViewHolder(val binding: ItemWordSetBinding): RecyclerView.ViewHolder(binding.root) {
 
         fun bind(wordList: MutableList<String>) {
-            val wordAdapter = WordAdpater()
+            val wordAdapter = WordAdapter { word ->
+                wordList.remove(word)
+            }
+            FlexboxLayoutManager(itemView.context).apply {
+                flexWrap = FlexWrap.WRAP
+                flexDirection = FlexDirection.ROW
+                justifyContent = JustifyContent.FLEX_START
+            }.let {
+                binding.wordRecyclerView.layoutManager = it
+            }
+            wordAdapter.initList(wordList)
+            binding.wordRecyclerView.adapter = wordAdapter
         }
     }
 

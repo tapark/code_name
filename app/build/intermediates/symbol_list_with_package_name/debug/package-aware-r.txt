@@ -98,6 +98,8 @@ attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
 attr alertDialogTheme
+attr alignContent
+attr alignItems
 attr allowStacking
 attr alpha
 attr alphabeticModifiers
@@ -329,6 +331,9 @@ attr dialogPreferredPadding
 attr dialogTheme
 attr displayOptions
 attr divider
+attr dividerDrawable
+attr dividerDrawableHorizontal
+attr dividerDrawableVertical
 attr dividerHorizontal
 attr dividerPadding
 attr dividerVertical
@@ -398,6 +403,8 @@ attr fastScrollHorizontalTrackDrawable
 attr fastScrollVerticalThumbDrawable
 attr fastScrollVerticalTrackDrawable
 attr firstBaselineToTopHeight
+attr flexDirection
+attr flexWrap
 attr floatingActionButtonStyle
 attr flow_firstHorizontalBias
 attr flow_firstHorizontalStyle
@@ -501,6 +508,7 @@ attr itemTextAppearance
 attr itemTextAppearanceActive
 attr itemTextAppearanceInactive
 attr itemTextColor
+attr justifyContent
 attr keyPositionType
 attr keyboardIcon
 attr keylines
@@ -513,6 +521,7 @@ attr layout
 attr layoutDescription
 attr layoutDuringTransition
 attr layoutManager
+attr layout_alignSelf
 attr layout_anchor
 attr layout_anchorGravity
 attr layout_behavior
@@ -563,6 +572,9 @@ attr layout_constraintWidth_percent
 attr layout_dodgeInsetEdges
 attr layout_editor_absoluteX
 attr layout_editor_absoluteY
+attr layout_flexBasisPercent
+attr layout_flexGrow
+attr layout_flexShrink
 attr layout_goneMarginBottom
 attr layout_goneMarginEnd
 attr layout_goneMarginLeft
@@ -571,9 +583,15 @@ attr layout_goneMarginStart
 attr layout_goneMarginTop
 attr layout_insetEdge
 attr layout_keyline
+attr layout_maxHeight
+attr layout_maxWidth
+attr layout_minHeight
+attr layout_minWidth
 attr layout_optimizationLevel
+attr layout_order
 attr layout_scrollFlags
 attr layout_scrollInterpolator
+attr layout_wrapBefore
 attr liftOnScroll
 attr liftOnScrollTargetViewId
 attr limitBoundsTo
@@ -631,6 +649,7 @@ attr maxButtonHeight
 attr maxCharacterCount
 attr maxHeight
 attr maxImageSize
+attr maxLine
 attr maxLines
 attr maxVelocity
 attr maxWidth
@@ -766,6 +785,9 @@ attr shortcutMatchRequired
 attr showAnimationBehavior
 attr showAsAction
 attr showDelay
+attr showDivider
+attr showDividerHorizontal
+attr showDividerVertical
 attr showDividers
 attr showMotionSpec
 attr showPaths
@@ -1825,6 +1847,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addWordButton
+id addWordEditText
 id alertTitle
 id aligned
 id all
@@ -1869,6 +1893,8 @@ id clip_vertical
 id clockwise
 id closeButton
 id collapseActionView
+id column
+id column_reverse
 id confirm_button
 id container
 id content
@@ -1886,6 +1912,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteWordButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -1927,6 +1954,8 @@ id filled
 id firstCardTextView
 id fitToContents
 id fixed
+id flex_end
+id flex_start
 id flip
 id floating
 id forever
@@ -2044,6 +2073,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id nowrap
 id off
 id on
 id onAttachStateChangeListener
@@ -2064,6 +2094,7 @@ id peekHeight
 id percent
 id pin
 id playButton
+id playRecyclerView
 id position
 id postLayout
 id progress_circular
@@ -2078,7 +2109,9 @@ id rightToLeft
 id right_icon
 id right_side
 id rounded
+id row
 id row_index_key
+id row_reverse
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2114,6 +2147,9 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id space_around
+id space_between
+id space_evenly
 id spacer
 id special_effects_controller_view_tag
 id spline
@@ -2173,8 +2209,8 @@ id textinput_prefix_text
 id textinput_suffix_text
 id time
 id title
-id titleBar
 id titleDividerNoCustom
+id titleLayout
 id titleTextView
 id title_template
 id toggle
@@ -2203,9 +2239,12 @@ id visible_removing_fragment_view_tag
 id withText
 id withinBounds
 id wordButton
+id wordRecyclerView
 id wordSetViewPager
+id wordTextView
 id wrap
 id wrap_content
+id wrap_reverse
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -2293,8 +2332,10 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_goal
 layout fragment_main
+layout fragment_play
 layout fragment_word
 layout item_goal
+layout item_word
 layout item_word_set
 layout material_chip_input_combo
 layout material_clock_display
@@ -3241,6 +3282,8 @@ styleable CustomAttribute attributeName customBoolean customColorDrawableValue c
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable ExtendedFloatingActionButton collapsedSize elevation extendMotionSpec hideMotionSpec showMotionSpec shrinkMotionSpec
 styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavior_autoShrink
+styleable FlexboxLayout alignContent alignItems dividerDrawable dividerDrawableHorizontal dividerDrawableVertical flexDirection flexWrap justifyContent maxLine showDivider showDividerHorizontal showDividerVertical
+styleable FlexboxLayout_Layout layout_alignSelf layout_flexBasisPercent layout_flexGrow layout_flexShrink layout_maxHeight layout_maxWidth layout_minHeight layout_minWidth layout_order layout_wrapBefore
 styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
 styleable FlowLayout itemSpacing lineSpacing

@@ -11,6 +11,7 @@ MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\Autowini\.gradle\caches\tran
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Autowini\.gradle\caches\transforms-3\1f9bea958a3aa2445fa1ee6f7e4ceb37\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Autowini\.gradle\caches\transforms-3\a5cb9fd02f639e53432fb9755fcb7426\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\Autowini\.gradle\caches\transforms-3\3ff25fbb0fe0ac403e36e6b3903119a9\transformed\appcompat-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.flexbox:flexbox:3.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\293af7be6ff30af84dbadb04e4ff1eae\transformed\flexbox-3.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\1b0f8ee09bcf5c1dcb464e1604dcaa87\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\Autowini\.gradle\caches\transforms-3\a633f803a4d84e9e8c7e2559276ca04a\transformed\fragment-1.3.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.2.3] C:\Users\Autowini\.gradle\caches\transforms-3\56af15d434fec0924532e4ce54ae58b6\transformed\activity-1.2.3\AndroidManifest.xml:17:1-24:12
@@ -136,6 +137,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Autowini
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Autowini\.gradle\caches\transforms-3\a5cb9fd02f639e53432fb9755fcb7426\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\Autowini\.gradle\caches\transforms-3\3ff25fbb0fe0ac403e36e6b3903119a9\transformed\appcompat-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\Autowini\.gradle\caches\transforms-3\3ff25fbb0fe0ac403e36e6b3903119a9\transformed\appcompat-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.flexbox:flexbox:3.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\293af7be6ff30af84dbadb04e4ff1eae\transformed\flexbox-3.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.flexbox:flexbox:3.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\293af7be6ff30af84dbadb04e4ff1eae\transformed\flexbox-3.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\1b0f8ee09bcf5c1dcb464e1604dcaa87\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\1b0f8ee09bcf5c1dcb464e1604dcaa87\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.4] C:\Users\Autowini\.gradle\caches\transforms-3\a633f803a4d84e9e8c7e2559276ca04a\transformed\fragment-1.3.4\AndroidManifest.xml:20:5-22:41

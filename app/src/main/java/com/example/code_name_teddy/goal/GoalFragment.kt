@@ -81,5 +81,8 @@ class GoalFragment: Fragment() {
         binding.refreshButton.setOnClickListener {
             getRandomPosition()
         }
+        binding.closeButton.setOnClickListener {
+            activity?.onBackPressed()
+        }
     }
 }

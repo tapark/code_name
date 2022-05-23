@@ -8,13 +8,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
 import com.example.code_name_teddy.R;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ItemWordSetBinding extends ViewDataBinding {
-  protected ItemWordSetBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  @NonNull
+  public final RecyclerView wordRecyclerView;
+
+  protected ItemWordSetBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      RecyclerView wordRecyclerView) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.wordRecyclerView = wordRecyclerView;
   }
 
   @NonNull

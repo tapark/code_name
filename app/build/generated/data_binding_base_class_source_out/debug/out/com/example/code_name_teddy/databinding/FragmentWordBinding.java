@@ -4,6 +4,7 @@ package com.example.code_name_teddy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,6 +18,12 @@ import java.lang.Object;
 
 public abstract class FragmentWordBinding extends ViewDataBinding {
   @NonNull
+  public final TextView addWordButton;
+
+  @NonNull
+  public final EditText addWordEditText;
+
+  @NonNull
   public final View grayLine1;
 
   @NonNull
@@ -29,7 +36,7 @@ public abstract class FragmentWordBinding extends ViewDataBinding {
   public final ConstraintLayout textLayout;
 
   @NonNull
-  public final ConstraintLayout titleBar;
+  public final ConstraintLayout titleLayout;
 
   @NonNull
   public final TextView titleTextView;
@@ -38,14 +45,17 @@ public abstract class FragmentWordBinding extends ViewDataBinding {
   public final ViewPager2 wordSetViewPager;
 
   protected FragmentWordBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      View grayLine1, View grayLine2, View grayLine3, ConstraintLayout textLayout,
-      ConstraintLayout titleBar, TextView titleTextView, ViewPager2 wordSetViewPager) {
+      TextView addWordButton, EditText addWordEditText, View grayLine1, View grayLine2,
+      View grayLine3, ConstraintLayout textLayout, ConstraintLayout titleLayout,
+      TextView titleTextView, ViewPager2 wordSetViewPager) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.addWordButton = addWordButton;
+    this.addWordEditText = addWordEditText;
     this.grayLine1 = grayLine1;
     this.grayLine2 = grayLine2;
     this.grayLine3 = grayLine3;
     this.textLayout = textLayout;
-    this.titleBar = titleBar;
+    this.titleLayout = titleLayout;
     this.titleTextView = titleTextView;
     this.wordSetViewPager = wordSetViewPager;
   }

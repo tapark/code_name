@@ -87,4 +87,5 @@
             app:layout_constraintEnd_toStartOf="@id/menuLayout"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

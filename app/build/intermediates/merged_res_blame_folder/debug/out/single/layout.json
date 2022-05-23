@@ -1,30 +1,38 @@
 [
     {
-        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-22:\\layout\\fragment_main.xml",
-        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-25:\\layout\\fragment_main.xml"
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-23:\\layout\\item_goal.xml",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\item_goal.xml"
     },
     {
-        "merged": "com.example.code_name_teddy.app-mergeDebugResources-22:/layout/fragment_word.xml",
-        "source": "com.example.code_name_teddy.app-main-25:/layout/fragment_word.xml"
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-23:\\layout\\item_word_set.xml",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\item_word_set.xml"
     },
     {
-        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-22:\\layout\\item_word_set.xml",
-        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-25:\\layout\\item_word_set.xml"
+        "merged": "com.example.code_name_teddy.app-mergeDebugResources-23:/layout/fragment_goal.xml",
+        "source": "com.example.code_name_teddy.app-main-26:/layout/fragment_goal.xml"
     },
     {
-        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-22:\\layout\\fragment_goal.xml",
-        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-25:\\layout\\fragment_goal.xml"
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-23:\\layout\\fragment_goal.xml",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\fragment_goal.xml"
     },
     {
-        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-22:\\layout\\fragment_word.xml",
-        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-25:\\layout\\fragment_word.xml"
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-23:\\layout\\fragment_main.xml",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\fragment_main.xml"
     },
     {
-        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-22:\\layout\\item_goal.xml",
-        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-25:\\layout\\item_goal.xml"
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-23:\\layout\\item_word.xml",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\item_word.xml"
     },
     {
-        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-22:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-25:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-23:\\layout\\fragment_word.xml",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\fragment_word.xml"
+    },
+    {
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-mergeDebugResources-23:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.code_name_teddy.app-mergeDebugResources-23:/layout/fragment_play.xml",
+        "source": "com.example.code_name_teddy.app-main-26:/layout/fragment_play.xml"
     }
 ]

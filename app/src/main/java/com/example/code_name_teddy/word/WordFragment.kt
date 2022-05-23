@@ -2,6 +2,7 @@ package com.example.code_name_teddy.word
 import android.annotation.SuppressLint
 import android.content.pm.ActivityInfo
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +20,8 @@ class WordFragment: Fragment() {
     lateinit var binding: FragmentWordBinding
     lateinit var wordSetAdapter: WordSetAdapter
 
+    private var currentPage = 1
+
     private val activityViewModel: MainActivityViewModel by lazy {
         ViewModelProvider(requireActivity(), ViewModelProvider.NewInstanceFactory())[MainActivityViewModel::class.java]
     }
@@ -35,6 +38,8 @@ class WordFragment: Fragment() {
         (activity as MainActivity).requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         initViewPager()
+
+        onAddWord()
     }
 
     private fun initViewPager() {
@@ -43,8 +48,22 @@ class WordFragment: Fragment() {
         binding.wordSetViewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                binding.titleTextView.text = "세트 ${position + 1}"
+                currentPage = position + 1
+                binding.titleTextView.text = "SET $currentPage"
             }
         })
+    }
+
+    private fun onAddWord() {
+        binding.addWordButton.setOnClickListener {
+            val initWord = binding.addWordEditText.text.toString()
+            Log.d("박태규", "initWord : $initWord")
+            val initWordList = initWord.split("\n")
+            initWordList.forEach {
+                activityViewModel.wordSetList[currentPage -1].add(it)
+            }
+            wordSetAdapter.initList(activityViewModel.wordSetList)
+            binding.addWordEditText.text.clear()
+        }
     }
 }

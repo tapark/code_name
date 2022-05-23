@@ -9,8 +9,10 @@ import androidx.databinding.ViewDataBinding;
 import com.example.code_name_teddy.databinding.ActivityMainBindingImpl;
 import com.example.code_name_teddy.databinding.FragmentGoalBindingImpl;
 import com.example.code_name_teddy.databinding.FragmentMainBindingImpl;
+import com.example.code_name_teddy.databinding.FragmentPlayBindingImpl;
 import com.example.code_name_teddy.databinding.FragmentWordBindingImpl;
 import com.example.code_name_teddy.databinding.ItemGoalBindingImpl;
+import com.example.code_name_teddy.databinding.ItemWordBindingImpl;
 import com.example.code_name_teddy.databinding.ItemWordSetBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
@@ -29,20 +31,26 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTMAIN = 3;
 
-  private static final int LAYOUT_FRAGMENTWORD = 4;
+  private static final int LAYOUT_FRAGMENTPLAY = 4;
 
-  private static final int LAYOUT_ITEMGOAL = 5;
+  private static final int LAYOUT_FRAGMENTWORD = 5;
 
-  private static final int LAYOUT_ITEMWORDSET = 6;
+  private static final int LAYOUT_ITEMGOAL = 6;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(6);
+  private static final int LAYOUT_ITEMWORD = 7;
+
+  private static final int LAYOUT_ITEMWORDSET = 8;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(8);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.code_name_teddy.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.code_name_teddy.R.layout.fragment_goal, LAYOUT_FRAGMENTGOAL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.code_name_teddy.R.layout.fragment_main, LAYOUT_FRAGMENTMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.code_name_teddy.R.layout.fragment_play, LAYOUT_FRAGMENTPLAY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.code_name_teddy.R.layout.fragment_word, LAYOUT_FRAGMENTWORD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.code_name_teddy.R.layout.item_goal, LAYOUT_ITEMGOAL);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.code_name_teddy.R.layout.item_word, LAYOUT_ITEMWORD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.code_name_teddy.R.layout.item_word_set, LAYOUT_ITEMWORDSET);
   }
 
@@ -73,6 +81,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for fragment_main is invalid. Received: " + tag);
         }
+        case  LAYOUT_FRAGMENTPLAY: {
+          if ("layout/fragment_play_0".equals(tag)) {
+            return new FragmentPlayBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_play is invalid. Received: " + tag);
+        }
         case  LAYOUT_FRAGMENTWORD: {
           if ("layout/fragment_word_0".equals(tag)) {
             return new FragmentWordBindingImpl(component, view);
@@ -84,6 +98,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ItemGoalBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for item_goal is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ITEMWORD: {
+          if ("layout/item_word_0".equals(tag)) {
+            return new ItemWordBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for item_word is invalid. Received: " + tag);
         }
         case  LAYOUT_ITEMWORDSET: {
           if ("layout/item_word_set_0".equals(tag)) {
@@ -144,14 +164,16 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(6);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(8);
 
     static {
       sKeys.put("layout/activity_main_0", com.example.code_name_teddy.R.layout.activity_main);
       sKeys.put("layout/fragment_goal_0", com.example.code_name_teddy.R.layout.fragment_goal);
       sKeys.put("layout/fragment_main_0", com.example.code_name_teddy.R.layout.fragment_main);
+      sKeys.put("layout/fragment_play_0", com.example.code_name_teddy.R.layout.fragment_play);
       sKeys.put("layout/fragment_word_0", com.example.code_name_teddy.R.layout.fragment_word);
       sKeys.put("layout/item_goal_0", com.example.code_name_teddy.R.layout.item_goal);
+      sKeys.put("layout/item_word_0", com.example.code_name_teddy.R.layout.item_word);
       sKeys.put("layout/item_word_set_0", com.example.code_name_teddy.R.layout.item_word_set);
     }
   }
