@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import com.example.code_name_teddy.databinding.ActivityMainBinding
 import com.example.code_name_teddy.goal.GoalFragment
+import com.example.code_name_teddy.play.PlayFragment
 import com.example.code_name_teddy.word.WordFragment
 
 class MainActivity : AppCompatActivity() {
@@ -36,5 +37,10 @@ class MainActivity : AppCompatActivity() {
     fun showWordFragment() {
         supportFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
             .replace(R.id.fragment_container, WordFragment()).addToBackStack(null).commit()
+    }
+
+    fun showPlayFragment() {
+        supportFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+            .replace(R.id.fragment_container, PlayFragment()).addToBackStack(null).commit()
     }
 }

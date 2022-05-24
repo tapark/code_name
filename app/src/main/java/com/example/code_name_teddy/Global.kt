@@ -4,7 +4,7 @@ const val COLOR_RED = 0
 const val COLOR_BLUE = 1
 const val COLOR_WHITE = 2
 const val COLOR_BLACK = 3
-
+const val COLOR_RESET = 4
 
 const val COUNT_RED = 8
 const val COUNT_BLUE = 8

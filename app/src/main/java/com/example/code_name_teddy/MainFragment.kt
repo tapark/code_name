@@ -34,6 +34,9 @@ class MainFragment: Fragment() {
         binding.wordButton.setOnClickListener {
             (activity as MainActivity).showWordFragment()
         }
+        binding.playButton.setOnClickListener {
+            (activity as MainActivity).showPlayFragment()
+        }
     }
 
 }

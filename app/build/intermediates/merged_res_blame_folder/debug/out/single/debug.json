@@ -16,16 +16,20 @@
         "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\layout_item_play.xml.flat",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\item_play.xml"
+    },
+    {
         "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\layout_fragment_word.xml.flat",
-        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\fragment_word.xml"
-    },
-    {
         "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\layout_fragment_word.xml.flat",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\fragment_word.xml"
     },
     {
         "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\xml_backup_rules.xml.flat",
@@ -34,6 +38,10 @@
     {
         "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\layout_fragment_play.xml.flat",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\fragment_play.xml"
     },
     {
         "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\drawable_background_blue_card.xml.flat",
@@ -56,12 +64,12 @@
         "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\fragment_main.xml"
     },
     {
-        "merged": "com.example.code_name_teddy.app-merged_res-24:/layout_fragment_play.xml.flat",
-        "source": "com.example.code_name_teddy.app-main-26:/layout/fragment_play.xml"
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\layout_dialog_select_card.xml.flat",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\dialog_select_card.xml"
     },
     {
-        "merged": "com.example.code_name_teddy.app-merged_res-24:/layout_fragment_goal.xml.flat",
-        "source": "com.example.code_name_teddy.app-main-26:/layout/fragment_goal.xml"
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\drawable_ic_outline_check_box_24.xml.flat",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\drawable\\ic_outline_check_box_24.xml"
     },
     {
         "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -78,6 +86,10 @@
     {
         "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\layout_item_play_word.xml.flat",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\item_play_word.xml"
     },
     {
         "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\mipmap-xhdpi_ic_launcher.webp.flat",
@@ -104,6 +116,10 @@
         "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\drawable_ic_round_check_box_outline_blank_24.xml.flat",
+        "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\drawable\\ic_round_check_box_outline_blank_24.xml"
+    },
+    {
         "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\layout_item_word.xml.flat",
         "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\layout\\item_word.xml"
     },
@@ -126,5 +142,9 @@
     {
         "merged": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-merged_res-24:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Autowini\\.gradle\\daemon\\7.3.3\\com.example.code_name_teddy.app-main-26:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.code_name_teddy.app-merged_res-24:/layout_item_play.xml.flat",
+        "source": "com.example.code_name_teddy.app-main-26:/layout/item_play.xml"
     }
 ]
