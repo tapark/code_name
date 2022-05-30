@@ -43,7 +43,11 @@ class WordFragment: Fragment() {
     }
 
     private fun initViewPager() {
-        wordSetAdapter = WordSetAdapter().apply { initList(activityViewModel.wordSetList) }
+        wordSetAdapter = WordSetAdapter{
+            Thread {
+                (activity as MainActivity).dbDeleteWord(currentPage, it)
+            }.start()
+        }.apply { initList(activityViewModel.wordSetList) }
         binding.wordSetViewPager.adapter = wordSetAdapter
         binding.wordSetViewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
@@ -60,7 +64,12 @@ class WordFragment: Fragment() {
             Log.d("박태규", "initWord : $initWord")
             val initWordList = initWord.split("\n")
             initWordList.forEach {
-                activityViewModel.wordSetList[currentPage -1].add(it)
+                if (!activityViewModel.wordSetList[currentPage -1].contains(it)) {
+                    activityViewModel.wordSetList[currentPage -1].add(it)
+                    Thread {
+                        (activity as MainActivity).dbInsertWord(currentPage, it)
+                    }.start()
+                }
             }
             wordSetAdapter.initList(activityViewModel.wordSetList)
             binding.addWordEditText.text.clear()

@@ -16,10 +16,7 @@ import com.example.code_name_teddy.MainActivity
 import com.example.code_name_teddy.MainActivityViewModel
 import com.example.code_name_teddy.R
 import com.example.code_name_teddy.databinding.FragmentPlayBinding
-import com.example.code_name_teddy.databinding.FragmentWordBinding
-import com.example.code_name_teddy.goal.GoalAdapter
 import com.example.code_name_teddy.utils.dpToPx
-import com.example.code_name_teddy.word.WordSetAdapter
 
 class PlayFragment: Fragment() {
 
@@ -118,6 +115,7 @@ class PlayFragment: Fragment() {
                 imageView.setImageResource(R.drawable.ic_round_check_box_outline_blank_24)
             }
         }
+        getRandomPosition()
     }
 
 }

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
 import androidx.cardview.widget.CardView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
@@ -16,7 +17,7 @@ class SelectCardDialog(val onClicked: (Int) -> Unit): DialogFragment() {
 
     private lateinit var binding : DialogSelectCardBinding
 
-    private val cardList: MutableList<CardView> by lazy {
+    private val cardList: MutableList<FrameLayout> by lazy {
         mutableListOf(binding.redCardView, binding.blueCardView, binding.whiteCardView, binding.blackCardView)
     }
 

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background"
+        android:clickable="true"
+        android:focusable="true" android:tag="layout/fragment_play_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="56dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_round_close_24"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/firstCardTextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="12dp"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                app:layout_constraintDimensionRatio="3:4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/closeButton"
+                app:layout_constraintBottom_toTopOf="@id/secondCardTextView"/>
+
+            <TextView
+                android:id="@+id/secondCardTextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="12dp"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:gravity="center"
+                app:layout_constraintDimensionRatio="3:4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/refreshButton"
+                app:layout_constraintTop_toBottomOf="@id/firstCardTextView"/>
+
+            <ImageView
+                android:id="@+id/refreshButton"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_baseline_refresh_24"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/playRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="5"
+            tools:itemCount="25"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/menuLayout"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/selectLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/selectTitleLayout"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Word Set"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:id="@+id/horizontalLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_stroke"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/closeButton2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_round_close_24"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/horizontalLine"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                app:layout_constraintTop_toBottomOf="@id/selectTitleLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <View
+                    android:id="@+id/verticalLine1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_stroke"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/verticalLine2"/>
+
+                <View
+                    android:id="@+id/verticalLine2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_stroke"
+                    app:layout_constraintStart_toEndOf="@id/verticalLine1"
+                    app:layout_constraintEnd_toStartOf="@id/verticalLine3"/>
+
+                <View
+                    android:id="@+id/verticalLine3"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_stroke"
+                    app:layout_constraintStart_toEndOf="@id/verticalLine2"
+                    app:layout_constraintEnd_toStartOf="@id/verticalLine4"/>
+
+                <View
+                    android:id="@+id/verticalLine4"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_stroke"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/verticalLine3"/>
+
+                <!--Recycler-->
+
+                <LinearLayout
+                    android:id="@+id/wordSetLayout1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/verticalLine1"
+                    android:clickable="true"
+                    android:focusable="true">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp">
+
+                        <TextView
+                            android:id="@+id/setTitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SET 1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/setCheckBox1"/>
+
+                        <ImageView
+                            android:id="@+id/setCheckBox1"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_round_check_box_outline_blank_24"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/setTitle1"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/app_stroke"/>
+                    
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/wordSetRecyclerView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wordSetLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@id/verticalLine2"
+                    app:layout_constraintStart_toEndOf="@id/verticalLine1"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp">
+
+                        <TextView
+                            android:id="@+id/setTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SET 1"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/setCheckBox2"/>
+
+                        <ImageView
+                            android:id="@+id/setCheckBox2"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_round_check_box_outline_blank_24"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/setTitle2"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/app_stroke"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/wordSetRecyclerView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wordSetLayout3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@id/verticalLine3"
+                    app:layout_constraintStart_toEndOf="@id/verticalLine2"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp">
+
+                        <TextView
+                            android:id="@+id/setTitle3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SET 3"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/setCheckBox3"/>
+
+                        <ImageView
+                            android:id="@+id/setCheckBox3"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_round_check_box_outline_blank_24"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/setTitle3"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/app_stroke"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/wordSetRecyclerView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wordSetLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@id/verticalLine4"
+                    app:layout_constraintStart_toEndOf="@id/verticalLine3"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp">
+
+                        <TextView
+                            android:id="@+id/setTitle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SET 4"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/setCheckBox4"/>
+
+                        <ImageView
+                            android:id="@+id/setCheckBox4"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_round_check_box_outline_blank_24"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/setTitle4"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/app_stroke"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/wordSetRecyclerView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wordSetLayout5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/verticalLine4"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp">
+
+                        <TextView
+                            android:id="@+id/setTitle5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SET 5"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/setCheckBox5"/>
+
+                        <ImageView
+                            android:id="@+id/setCheckBox5"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_round_check_box_outline_blank_24"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/setTitle5"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/app_stroke"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/wordSetRecyclerView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

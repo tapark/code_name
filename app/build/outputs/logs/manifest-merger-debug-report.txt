@@ -7,6 +7,13 @@ INJECTED from C:\Users\Autowini\AndroidStudioProjects\code_name_teddy\app\src\ma
 MERGED from [androidx.databinding:databinding-adapters:7.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\2f354196ff58cb8717d30347b28fff0e\transformed\databinding-adapters-7.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-ktx:7.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\74ab802045ca70b703899157a70831bf\transformed\databinding-ktx-7.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:7.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\67e8abf29485f06a33fba469a2a738d5\transformed\databinding-runtime-7.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-rxjava2:2.4.2] C:\Users\Autowini\.gradle\caches\transforms-3\63cfd5d8dddf3962121f2fad4a464e46\transformed\room-rxjava2-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-rxjava3:2.4.2] C:\Users\Autowini\.gradle\caches\transforms-3\6090ad716df13313bacd98a72e10da67\transformed\room-rxjava3-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-guava:2.4.2] C:\Users\Autowini\.gradle\caches\transforms-3\c8832469557ca74afb34ed66f66b9782\transformed\room-guava-2.4.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-paging:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\f7d7d6ed21b65659673db9426f835984\transformed\room-paging-2.5.0-alpha01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-ktx:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\7a35b09e76f46dd7ec2adbacfc1e2f69\transformed\room-ktx-2.5.0-alpha01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\fb4f0205e2670e3b59074072264ef2d1\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\Autowini\.gradle\caches\transforms-3\d0957bf1891b68e01d1933b8ae8f8e95\transformed\core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Autowini\.gradle\caches\transforms-3\1f9bea958a3aa2445fa1ee6f7e4ceb37\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Autowini\.gradle\caches\transforms-3\a5cb9fd02f639e53432fb9755fcb7426\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
@@ -30,7 +37,6 @@ MERGED from [androidx.customview:customview:1.0.0] C:\Users\Autowini\.gradle\cac
 MERGED from [androidx.core:core:1.7.0] C:\Users\Autowini\.gradle\caches\transforms-3\4825226d7bdc18dc642f18a8a048b277\transformed\core-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Autowini\.gradle\caches\transforms-3\f2416a8f398ec1e28d764f47475f534b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.databinding:viewbinding:7.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\702c71cad9d47ac36dca86b4efe50bd3\transformed\viewbinding-7.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\fb4f0205e2670e3b59074072264ef2d1\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
 MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\6e3c5f6a6c31e1256788edaf66f72747\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\Autowini\.gradle\caches\transforms-3\f3c7f2813ba0a0daadc6630ae0f5c31c\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
@@ -43,6 +49,8 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Autowini\.gradle\caches\
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Autowini\.gradle\caches\transforms-3\af71f8f971b7a6964411aa4b58eea92c\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Autowini\.gradle\caches\transforms-3\93e782034ed3e009fa83590d337f0ea2\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\890c3484499625513d5ecd1135191751\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\9b0d5e88cceeef61834ebd682885e3d3\transformed\sqlite-framework-2.3.0-alpha01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.3.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\89ef498e56294b39cc457eb4b587ca22\transformed\sqlite-2.3.0-alpha01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\6f56f1ba082def6824815720dcd6c58c\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\35a28353571873618272aaff940a995e\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\da64b280e174979c60b9224c5a3d82ef\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -69,6 +77,8 @@ INJECTED from C:\Users\Autowini\AndroidStudioProjects\code_name_teddy\app\src\ma
 		ADDED from C:\Users\Autowini\AndroidStudioProjects\code_name_teddy\app\src\main\AndroidManifest.xml:2:11-69
 application
 ADDED from C:\Users\Autowini\AndroidStudioProjects\code_name_teddy\app\src\main\AndroidManifest.xml:6:5-27:19
+MERGED from [androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:25:5-31:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Autowini\.gradle\caches\transforms-3\1f9bea958a3aa2445fa1ee6f7e4ceb37\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Autowini\.gradle\caches\transforms-3\1f9bea958a3aa2445fa1ee6f7e4ceb37\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Autowini\.gradle\caches\transforms-3\a5cb9fd02f639e53432fb9755fcb7426\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -129,6 +139,20 @@ MERGED from [androidx.databinding:databinding-ktx:7.2.0] C:\Users\Autowini\.grad
 MERGED from [androidx.databinding:databinding-ktx:7.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\74ab802045ca70b703899157a70831bf\transformed\databinding-ktx-7.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:databinding-runtime:7.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\67e8abf29485f06a33fba469a2a738d5\transformed\databinding-runtime-7.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:databinding-runtime:7.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\67e8abf29485f06a33fba469a2a738d5\transformed\databinding-runtime-7.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-rxjava2:2.4.2] C:\Users\Autowini\.gradle\caches\transforms-3\63cfd5d8dddf3962121f2fad4a464e46\transformed\room-rxjava2-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-rxjava2:2.4.2] C:\Users\Autowini\.gradle\caches\transforms-3\63cfd5d8dddf3962121f2fad4a464e46\transformed\room-rxjava2-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-rxjava3:2.4.2] C:\Users\Autowini\.gradle\caches\transforms-3\6090ad716df13313bacd98a72e10da67\transformed\room-rxjava3-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-rxjava3:2.4.2] C:\Users\Autowini\.gradle\caches\transforms-3\6090ad716df13313bacd98a72e10da67\transformed\room-rxjava3-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-guava:2.4.2] C:\Users\Autowini\.gradle\caches\transforms-3\c8832469557ca74afb34ed66f66b9782\transformed\room-guava-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-guava:2.4.2] C:\Users\Autowini\.gradle\caches\transforms-3\c8832469557ca74afb34ed66f66b9782\transformed\room-guava-2.4.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-paging:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\f7d7d6ed21b65659673db9426f835984\transformed\room-paging-2.5.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-paging:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\f7d7d6ed21b65659673db9426f835984\transformed\room-paging-2.5.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\7a35b09e76f46dd7ec2adbacfc1e2f69\transformed\room-ktx-2.5.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\7a35b09e76f46dd7ec2adbacfc1e2f69\transformed\room-ktx-2.5.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\fb4f0205e2670e3b59074072264ef2d1\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\fb4f0205e2670e3b59074072264ef2d1\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\Autowini\.gradle\caches\transforms-3\d0957bf1891b68e01d1933b8ae8f8e95\transformed\core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\Autowini\.gradle\caches\transforms-3\d0957bf1891b68e01d1933b8ae8f8e95\transformed\core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Autowini\.gradle\caches\transforms-3\1f9bea958a3aa2445fa1ee6f7e4ceb37\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
@@ -175,8 +199,6 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Au
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Autowini\.gradle\caches\transforms-3\f2416a8f398ec1e28d764f47475f534b\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:7.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\702c71cad9d47ac36dca86b4efe50bd3\transformed\viewbinding-7.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:7.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\702c71cad9d47ac36dca86b4efe50bd3\transformed\viewbinding-7.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\fb4f0205e2670e3b59074072264ef2d1\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\fb4f0205e2670e3b59074072264ef2d1\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\6e3c5f6a6c31e1256788edaf66f72747\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
@@ -201,6 +223,10 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Autowini\.gradle\ca
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Autowini\.gradle\caches\transforms-3\93e782034ed3e009fa83590d337f0ea2\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\890c3484499625513d5ecd1135191751\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\890c3484499625513d5ecd1135191751\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\9b0d5e88cceeef61834ebd682885e3d3\transformed\sqlite-framework-2.3.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\9b0d5e88cceeef61834ebd682885e3d3\transformed\sqlite-framework-2.3.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.3.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\89ef498e56294b39cc457eb4b587ca22\transformed\sqlite-2.3.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.3.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\89ef498e56294b39cc457eb4b587ca22\transformed\sqlite-2.3.0-alpha01\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\6f56f1ba082def6824815720dcd6c58c\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\6f56f1ba082def6824815720dcd6c58c\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Autowini\.gradle\caches\transforms-3\35a28353571873618272aaff940a995e\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -221,6 +247,16 @@ INJECTED from C:\Users\Autowini\AndroidStudioProjects\code_name_teddy\app\src\ma
 		INJECTED from C:\Users\Autowini\AndroidStudioProjects\code_name_teddy\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Autowini\AndroidStudioProjects\code_name_teddy\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Autowini\AndroidStudioProjects\code_name_teddy\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:26:9-30:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:29:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:30:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:28:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:27:13-74
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
 	android:authorities

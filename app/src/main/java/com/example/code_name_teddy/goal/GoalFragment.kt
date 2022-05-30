@@ -3,6 +3,7 @@ package com.example.code_name_teddy.goal
 import android.content.Context
 import android.content.res.Resources
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +20,11 @@ class GoalFragment: Fragment() {
     lateinit var binding: FragmentGoalBinding
     lateinit var goalAdapter: GoalAdapter
 
+    private var currentMode = MODE_WIDE
+
+    var windowWidth = 0
+    var windowHeight = 0
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_goal, container, false)
         binding.lifecycleOwner = this.viewLifecycleOwner
@@ -28,18 +34,27 @@ class GoalFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        initAdapter()
+        initAdapter(MODE_WIDE)
         onClick()
     }
 
-    private fun initAdapter() {
+    private fun initAdapter(mode: Int) {
         activity?.let {
-            val windowWidth = (activity as MainActivity).binding.fragmentContainer.width - dpToPx(requireContext(), 56)
-            val windowHeight = (activity as MainActivity).binding.fragmentContainer.height
+            if (mode == MODE_WIDE) {
+                windowWidth = (activity as MainActivity).binding.fragmentContainer.width - dpToPx(requireContext(), 56)
+                windowHeight = (activity as MainActivity).binding.fragmentContainer.height
+            } else {
+                windowWidth = (activity as MainActivity).binding.fragmentContainer.height
+                windowHeight = (activity as MainActivity).binding.fragmentContainer.height
+
+            }
 
             goalAdapter = GoalAdapter(windowWidth, windowHeight)
             binding.goalRecyclerView.adapter = goalAdapter
             getRandomPosition()
+        }
+        binding.goalRecyclerView.setOnClickListener {
+            Log.d("박태규", "goalRecyclerView.setOnClickListener")
         }
     }
 
@@ -84,5 +99,22 @@ class GoalFragment: Fragment() {
         binding.closeButton.setOnClickListener {
             activity?.onBackPressed()
         }
+        binding.screenLayout.setOnClickListener {
+            when(currentMode) {
+                MODE_SQUARE -> {
+                    currentMode = MODE_WIDE
+                    initAdapter(MODE_WIDE)
+                }
+                MODE_WIDE -> {
+                    currentMode = MODE_SQUARE
+                    initAdapter(MODE_SQUARE)
+                }
+            }
+        }
+    }
+
+    companion object {
+        const val MODE_SQUARE = 0
+        const val MODE_WIDE = 1
     }
 }

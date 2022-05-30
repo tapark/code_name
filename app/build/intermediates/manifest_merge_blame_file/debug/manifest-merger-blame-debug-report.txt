@@ -54,16 +54,25 @@
 32            </intent-filter>
 33        </activity>
 34
-35        <provider
-35-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-36            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-36-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-37            android:authorities="com.example.code_name_teddy.lifecycle-process"
-37-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-38            android:exported="false"
-38-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-39            android:multiprocess="true" />
-39-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-40    </application>
-41
-42</manifest>
+35        <service
+35-->[androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:26:9-30:63
+36            android:name="androidx.room.MultiInstanceInvalidationService"
+36-->[androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:27:13-74
+37            android:directBootAware="true"
+37-->[androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:28:13-43
+38            android:exported="false" />
+38-->[androidx.room:room-runtime:2.5.0-alpha01] C:\Users\Autowini\.gradle\caches\transforms-3\62edde82b7cff1a349025c5e5854d4df\transformed\room-runtime-2.5.0-alpha01\AndroidManifest.xml:29:13-37
+39
+40        <provider
+40-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+41            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+41-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+42            android:authorities="com.example.code_name_teddy.lifecycle-process"
+42-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+43            android:exported="false"
+43-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+44            android:multiprocess="true" />
+44-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Autowini\.gradle\caches\transforms-3\196fb2524f7fbec903bae296278a73e3\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+45    </application>
+46
+47</manifest>

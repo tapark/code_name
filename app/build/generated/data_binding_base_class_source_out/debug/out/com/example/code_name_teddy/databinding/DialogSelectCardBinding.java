@@ -4,10 +4,10 @@ package com.example.code_name_teddy.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.cardview.widget.CardView;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.code_name_teddy.R;
@@ -16,26 +16,26 @@ import java.lang.Object;
 
 public abstract class DialogSelectCardBinding extends ViewDataBinding {
   @NonNull
-  public final CardView blackCardView;
+  public final FrameLayout blackCardView;
 
   @NonNull
-  public final CardView blueCardView;
+  public final FrameLayout blueCardView;
 
   @NonNull
   public final AppCompatButton closeButton;
 
   @NonNull
-  public final CardView redCardView;
+  public final FrameLayout redCardView;
 
   @NonNull
   public final AppCompatButton resetButton;
 
   @NonNull
-  public final CardView whiteCardView;
+  public final FrameLayout whiteCardView;
 
   protected DialogSelectCardBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      CardView blackCardView, CardView blueCardView, AppCompatButton closeButton,
-      CardView redCardView, AppCompatButton resetButton, CardView whiteCardView) {
+      FrameLayout blackCardView, FrameLayout blueCardView, AppCompatButton closeButton,
+      FrameLayout redCardView, AppCompatButton resetButton, FrameLayout whiteCardView) {
     super(_bindingComponent, _root, _localFieldCount);
     this.blackCardView = blackCardView;
     this.blueCardView = blueCardView;

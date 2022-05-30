@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.code_name_teddy.app-mergeDebugResources-22:/values-sl/values-sl.xml",
+            "outputFile": "com.example.code_name_teddy.app-mergeDebugResources-30:/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Autowini\\.gradle\\caches\\transforms-3\\4825226d7bdc18dc642f18a8a048b277\\transformed\\core-1.7.0\\res\\values-sl\\values-sl.xml",

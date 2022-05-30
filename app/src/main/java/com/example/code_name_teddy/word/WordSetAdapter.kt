@@ -9,15 +9,16 @@ import com.google.android.flexbox.FlexWrap
 import com.google.android.flexbox.FlexboxLayoutManager
 import com.google.android.flexbox.JustifyContent
 
-class WordSetAdapter(): RecyclerView.Adapter<WordSetAdapter.WordSetViewHolder>() {
+class WordSetAdapter(val onDelete: (String) -> Unit): RecyclerView.Adapter<WordSetAdapter.WordSetViewHolder>() {
 
     lateinit var wordSetList: MutableList<MutableList<String>>
 
     inner class WordSetViewHolder(val binding: ItemWordSetBinding): RecyclerView.ViewHolder(binding.root) {
 
         fun bind(wordList: MutableList<String>) {
-            val wordAdapter = WordAdapter { word ->
-                wordList.remove(word)
+            val wordAdapter = WordAdapter { word, position ->
+                wordList.removeAt(position)
+                onDelete(word)
             }
             FlexboxLayoutManager(itemView.context).apply {
                 flexWrap = FlexWrap.WRAP

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.code_name_teddy.databinding.ItemWordBinding
 
 
-class WordAdapter(val onClick: (String) -> Unit): RecyclerView.Adapter<WordAdapter.WordViewHolder>() {
+class WordAdapter(val onClick: (String, Int) -> Unit): RecyclerView.Adapter<WordAdapter.WordViewHolder>() {
 
     lateinit var wordList: MutableList<String>
 
@@ -16,8 +16,8 @@ class WordAdapter(val onClick: (String) -> Unit): RecyclerView.Adapter<WordAdapt
         fun bind(word: String, position: Int) {
             binding.wordTextView.text = word
             binding.deleteWordButton.setOnClickListener {
-                onClick(word)
-                notifyItemRemoved(position)
+                onClick(word, position)
+                notifyDataSetChanged()
             }
         }
     }
